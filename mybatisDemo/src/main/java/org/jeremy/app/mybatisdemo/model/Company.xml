@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.jeremy.app.mybatisdemo.dao.CompanyDao">
+
+	<!-- select语句 -->
+	<select id="selectEmployeeByID" parameterType="string" resultType="Employee">
+		select * from `data_employee` where id = #{id}
+	</select>
+
+</mapper>
